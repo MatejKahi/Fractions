@@ -20,8 +20,8 @@ public class Fraction {
         int a = MathUtils.findLowestCommonMultiple(getDenominator(), other.getDenominator());
         int b = a / getDenominator();
         int c = a / other.getDenominator();
-        int soucet = (b * getNumerator()) + (c * other.getNumerator());
-        return new Fraction(soucet, a);
+        int součet = (b * getNumerator()) + (c * other.getNumerator());
+        return new Fraction(součet, a);
     }
 
 
@@ -34,8 +34,8 @@ public class Fraction {
         int a = MathUtils.findLowestCommonMultiple(getDenominator(), other.getDenominator());
         int b = a / getDenominator();
         int c = a / other.getDenominator();
-        int rozdil = (b * getNumerator()) - (c * other.getNumerator());
-        return new Fraction(rozdil, a);
+        int rozdíl = (b * getNumerator()) - (c * other.getNumerator());
+        return new Fraction(rozdíl, a);
     }
     /**
      * Multiplies the two fractions. Returns a new fraction.
